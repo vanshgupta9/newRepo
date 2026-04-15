@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/jourrnal") // use to map the complete class and then which which call is this.
+@RequestMapping("/jourrnal") // use to map the complete class and then check which call is this.
 public class Controller { //is used to create REST APIs — meaning it handles HTTP requests and  directly returns data (usually JSON)
     private Map<String, JournalEntry> journalEntryMap = new HashMap<>();
 
