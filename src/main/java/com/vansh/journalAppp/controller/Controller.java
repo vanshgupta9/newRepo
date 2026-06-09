@@ -38,6 +38,10 @@ public class Controller { //is used to create REST APIs — meaning it handles H
     public JournalEntry updatById(@PathVariable String myId ,@RequestBody JournalEntry myEntry ){
         return journalEntryMap.put("id", myEntry);
     }
+     @PutMapping("id/{myId}")
+    public JournalEntry updatById(@PathVariable String myId ,@RequestBody JournalEntry myEntry ){
+        return journalEntryMap.put("id", myEntry);
+    }
 
 
 }
